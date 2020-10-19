@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Atomus</RootNamespace>
+    <AssemblyName>Atomus.Database.MySQL</AssemblyName>
+    <Version>8.0.12</Version>
+    <Authors>DSUN</Authors>
+    <Company>Atomus</Company>
+    <Product>Atomus Framework in .Net Standard 2.0</Product>
+    <Description>Atomus Framework in .Net Standard 2.0</Description>
+    <Copyright>Copyright 2020. DSUN all rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dsuny/Atomus.Database.MySQL</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsuny/Atomus.Database.MySQL</RepositoryUrl>
+    <PackageIcon>atomus.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Atomus Atomus.Core Database MySQL AtomusFramework</PackageTags>
+    <PackageReleaseNotes>release 8.0.12</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\src\MySQL.cs" Link="MySQL.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetStandard" Version="1.0.2.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\image\atomus.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
